@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="5. SurveyFormstyles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Real State Contact Form</h1>
+      <p id="description">Complete this form to receive your offer!</p>
+      <form id="survey-form">
+        <div>
+          <label id="name-label">First Name <input id="name" class="control-line" name="name" type="text" placeholder="Enter your first name" required></label>
+        </div>
+        <div>
+          <label id="second-name-label">Second Name <input id="second-name" class="control-line" name="second-name" type="text" placeholder="Enter your second name" required></label>
+        </div>
+        <div>
+          <label id="email-label">Email <input id="email" class="control-line" name="email" type="email" placeholder="Enter your Email" required></label>
+        </div>
+        <div>
+          <p>Are you looking for properties to buy or rent?</p>
+          <label for="buy"><input id="buy" name="search" type="radio" value="buy" checked> Buy</label>
+          <label for="rent"><input id="rent" name="search" type="radio" value="rent"> Rent</label>
+        </div>
+        <div>
+          <label id="dropdown-label">What type of property are you looking for?
+            <select id="dropdown" name="dropdown" class="control-line">
+              <option value="1">Any</option>
+              <option value="2">Houses</option>
+              <option value="3">Flats / Apartments</option>
+              <option value="4">Bungalows</option>
+              <option value="5">Land</option>
+              <option value="6">Commercial Property</option>
+              <option value="7">Other</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label id="number-label">No. of Bedrooms: <input id="number" name="number" type="number" min="1" max="5" placeholder="Bedrooms"></label>
+        </div>
+        <div>
+          <p>Must Haves:</p>
+          <label id="parking-label" for="parking" class="control-checkbox"><input id="parking" type="checkbox" value="parking"> Parking</label>
+          <label id="garden-label" for="garden" class="control-checkbox"><input id="garden" type="checkbox" value="garden"> Garden</label>
+          <label id="pool-label" for="pool" class="control-checkbox"><input id="pool" type="checkbox" value="pool"> Pool</label>
+          <label id="storage-label" for="storage" class="control-checkbox"><input id="storage" type="checkbox" value="storage"> Storage Building</label>
+          <label id="balcony-label" for="balcony" class="control-checkbox"><input id="balcony" type="checkbox" value="balcony"> Balcony</label>
+          <label id="bicycle-label" for="bicycle" class="control-checkbox"><input id="bicycle" type="checkbox" value="bicycle"> Bicycle Storage</label>
+          <label id="greenhouse-label" for="greenhouse" class="control-checkbox"><input id="greenhouse" type="checkbox" value="greenhouse"> Greenhouse</label>
+        </div>
+        <div>
+          <p>Additional Notes</p>
+          <label id="text-area-label">
+            <textarea id="textarea" name="textarea" rows="3" placeholder="Type here..." cols="30"></textarea>
+          </label>
+        </div>
+        <div class="control-button">
+          <button id="submit" type="submit" >Submit</button>
+        </div>
+      </form>
+    </div>  
+  </body>
+</html>

@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  min-width: 400px;
+}
+
+/* -------- Header Styles -------- */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Logo Styles */
+
+.logo h1 a{
+  margin: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Pacifico', 'Times New Roman', Times, serif;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.logo h1:hover {
+  transform: scale(1.1);
+}
+
+.logo p {
+  margin: 0;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* Navigation Styles */
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: 681px) {
+  nav a:hover {
+    border-bottom: 5px solid rgb(65, 149, 240);
+    padding-bottom: 10px;
+  }
+}
+
+/* Responsive Button Styles */
+
+.responsive-button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+.responsive-button:focus ~ ul {
+  height: 170px;
+}
+
+@media (max-width: 681px) {
+  #navbar {
+    display: block;
+    text-align: center;
+  }
+  nav ul {
+    display: block;
+    width: 100%;
+    padding: 15px 0 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  ul {
+    height: 0;
+
+  }
+
+  nav ul li {
+    margin: 0;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  nav ul li:hover {
+    background: rgb(65, 149, 240, 0.5);
+    border-bottom: none;
+  }
+
+  .responsive-button {
+    display: flex;
+  }
+
+}
+
+/* -------- Section 1 - Welcome Styles -------- */
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  padding: 120px 20px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.section1-wrap {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
+  background: #eaeaea;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 681px){
+  .section1-wrap {
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+}
+
+/* Content Styles */
+
+.section1-content {
+  max-width: 600px;
+  min-width: 150px;
+}
+
+.section1-content h3 {
+  font-size: 2rem;
+}
+
+span {
+  color: blue;
+}
+
+.section1-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.section1-content p {
+  font-size: 1.125rem;
+  margin: 20px 0 25px;
+}
+
+@media screen and (max-width: 681px) {
+  .section1-content h3 {
+    font-size: 1rem;
+  }
+  .section1-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .section1-content p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Buttons Styles */
+
+.btn-container {
+  width: 300px;
+  display: flex;
+  gap: 1em;
+}
+
+.btn-1 {
+  padding: 10px 25px;
+  background: black;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  background-color: white;
+  color: #1e67ce;
+  border: 2px solid #1e67ce;
+}
+
+#profile-link, .btn-2 {
+  padding: 10px 25px;
+  background: blue;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#profile-link:hover, .btn-2:hover {
+  background-color: white;
+  color: #1e67ce;
+}
+
+/* Image Styles */
+
+.img-container {
+  max-width: 500px;
+  min-width: 200px;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%; /* Chrome, Safari */
+  -moz-border-radius: 50%; /* Firefox */
+}
+
+@media screen and (max-width: 681px) {
+  .img-container {
+    max-width: 200px;
+    min-width: 200px;
+  }
+}
+
+/* -------- Section 2 - Projects Styles -------- */
+
+#projects {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12% 8%;
+  gap: 8em;
+}
+
+/* About - Image Styles */
+.about-img {
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.about-img img {
+  width: 100%;
+  box-shadow: 0 0 25px blue;
+  border-radius: 50%;
+  -webkit-border-radius: 50%; /* Chrome, Safari */
+  -moz-border-radius: 50%; /* Firefox */
+}
+
+/* Project Tile Styles */
+
+.project-tile {
+  color: white;
+  max-width: 600px;
+}
+
+.project-tile h2 {
+  text-align: left;
+  font-size: 30px;
+}
+
+.project-tile h3 {
+  font-size: 40px;
+}
+
+.project-tile p {
+  font-size: 1.125rem;
+  margin: 2em 0 3em;
+}
+
+@media screen and (max-width: 681px) {
+  #projects {
+    gap: 2em;
+  }
+  .project-tile h2 {
+    font-size: 18px;
+  }
+  
+  .project-tile h3 {
+    font-size: 25px;
+  }
+  
+  .project-tile p {
+    font-size: 0.75rem;
+  }
+}
+
+/* -------- Footer Styles -------- */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  font-size: 14px;
+}
+
+/* Social Icons Styles */
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: rgb(65, 149, 240);
+}
+
+/* Essencial Links Styles */
+
+.essential-links ul {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.essential-links ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.essential-links ul li a:hover {
+  color: rgb(65, 149, 240);
+}
+
+@media (max-width: 681px) {
+  .essential-links ul {
+    font-size: 12px;
+  }
+}
+
+/* -------- Contact Page Styles -------- */
+
+.contact-section{
+  width: 100%;
+  height: 100vh;
+  padding: 120px 20px 40px;
+}
+
+.contact-wrap{
+  padding: 20px;
+  height: 100%;
+  align-content: center;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  text-align: center;
+  margin: 10px auto 40px;
+}
+
+/* Form Styles */
+
+form {
+  width: 60vw;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 20px auto;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+.person-name {
+  display: flex;
+  gap: 1em;
+}
+
+@media screen and (max-width: 681px) {
+  .person-name {
+    display: block;
+  }
+  .first-name {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 681px) {
+  .first-name, .last-name {
+    width: 50%;
+    margin: 0;
+  }
+  
+}
+
+.first-name, .last-name {
+  width: 100%;
+}
+
+label{
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(95, 94, 94);
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 5px 0 0 0;
+  padding: 10px;
+  font-size: 16px;
+  min-height: 3em;
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 5px;
+  background: rgb(118, 118, 118, 0.1);
+}
+textarea {
+  height: 6em;
+}
+
+.control-button {
+  text-align: center;
+}
+
+
+  

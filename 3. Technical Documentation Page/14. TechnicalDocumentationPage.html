@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C# Commands</title>
+    <link rel="stylesheet" href="14. TechnicalDocumentationPagestyles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        C# Commands
+      </header>
+      <a class="nav-link" href="#if_statement">IF Statement</a>
+      <a class="nav-link" href="#for_loop">For Loop</a>
+      <a class="nav-link" href="#switch_statement">SWITCH Statement</a>
+      <a class="nav-link" href="#while_loop">WHILE Loop</a>
+      <a class="nav-link" href="#method_declaration">Method Declaration</a>
+    </nav>
+    <main id="main-doc">
+      <section id="if_statement" class="main-section">
+        <header>
+          IF Statement
+        </header>
+        <p>The <strong>if</strong> statement in C# is used to execute a block of code if a specified condition is true. It allows developers to create decision-making logic within their programs.</p>
+        <p>The syntax typically consists of the <strong>if</strong> keyword followed by the condition to be evaluated and the code block to execute if the condition is true. Example:</p>
+        <code>int x = 10;
+          if (x > 5)
+          {
+            Console.WriteLine("x is greater than 5");
+          }
+        </code>
+        <ul>
+          <li>The <strong>if</strong> statement checks whether a condition is true.</li>
+          <li>If the condition is met, the code block within the <strong>if</strong> statement is executed.</li>
+        </ul
+      </section>
+      <section id="for_loop" class="main-section">
+        <header>
+          FOR Loop
+        </header>
+        <p>The <strong>for</strong> loop in C# is a control flow statement used to execute a block of code a specified number of times. It consists of three parts: initialization, condition, and iteration.</p>
+        <p>This loop is particularly useful when the number of iterations is known beforehand. Example:</p>
+        <code>for (int i = 0; i < 5; i++)
+          {
+          Console.WriteLine("Iteration: " + i);
+          }
+        </code>
+        <ul>
+          <li>The <strong>for</strong> loop executes a block of code a specified number of times.
+          </li>
+          <li>It consists of initialization, condition, and iteration parts.
+          </li>
+        </ul
+      </section>
+      <section id="switch_statement" class="main-section">
+        <header>
+          SWITCH Statement
+        </header>
+        <p>The <strong>switch</strong> statement in C# provides a way to perform different actions based on the value of a variable or expression. It allows developers to write more concise and readable code when dealing with multiple conditional cases.</p>
+        <p>The <strong>switch</strong> statement evaluates the value of an expression and executes the corresponding case. Example:</p>
+        <code>int day = 3;
+          switch (day)
+          {
+            case 1:
+              Console.WriteLine("Monday");
+              break;
+            case 2:
+              Console.WriteLine("Tuesday");
+              break;
+            default:
+            Console.WriteLine("Other day");
+            break;
+          }
+        </code>
+        <ul>
+          <li>The <strong>switch</strong> statement performs actions based on the value of a variable.
+          </li>
+          <li>It provides a concise way to handle multiple conditional cases.
+          </li>
+        </ul
+      </section>
+      <section id="while_loop" class="main-section">
+        <header>
+          WHILE Loop
+        </header>
+        <p>The <strong>while</strong> loop in C# is used to execute a block of code repeatedly as long as a specified condition is true. It is particularly useful when the number of iterations is not known beforehand.</p>
+        <p>The loop evaluates the condition before executing the code block. Example:</p>
+        <code>int count = 0;
+          while (count < 5)
+          {
+            Console.WriteLine("Count: " + count);
+            count++;
+          }
+        </code>
+        <ul>
+          <li>The <strong>while</strong> loop executes a block of code while a condition is true.
+          </li>
+          <li>It is useful when the number of iterations is not known beforehand.
+          </li>
+        </ul
+      </section>
+      <section id="method_declaration" class="main-section">
+        <header>
+          Method Declaration
+        </header>
+        <p>Method declaration in C# defines a reusable block of code that performs a specific task. It encapsulates functionality, promoting code reusability and maintainability. </p>
+        <p>Methods can accept parameters and return values, allowing for flexible usage across different parts of a program. Example:</p>
+        <code>int Add(int a, int b)
+          {
+            return a + b;
+          }
+        </code>
+        <ul>
+          <li>Methods encapsulate a set of instructions that perform a specific task.
+          </li>
+          <li>They enhance code reusability and maintainability.
+          </li>
+        </ul
+      </section>
+    </main>
+  </body>
+</html>
